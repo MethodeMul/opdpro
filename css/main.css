@@ -1,0 +1,338 @@
+body {
+	padding: 0; /* Gets rid of the automatic padding */
+	margin: 0;	/*	on HTML documents */
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 14px;
+    color: #444;
+}
+
+h2 {
+    padding-top: 12px;
+}
+
+#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #ffffff;
+  height: 45px;
+  text-align: center;
+  padding-top: 20px;
+  /* Adds shadow to the bottom of the bar */
+  -webkit-box-shadow: 0px 0px 8px 0px #000000;
+  -moz-box-shadow: 0px 0px 8px 0px #000000;
+  box-shadow: 0px 0px 8px 0px #000000;
+  /* Adds the transparent background */
+  background-color: rgba(1, 1, 1, 0.8);
+  color: rgba(1, 1, 1, 0.8);
+  z-index:90;
+}
+
+#navigation a {
+	font-size: 18px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+#navigation img {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: -10px;
+	border : 0;
+	float : left;
+}
+
+#navigation table {
+	font-size: 10px;
+	font-weight: bold;
+	color: white;
+	padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -10px;
+    border : 0;
+    float : right;
+}
+
+#navigation a:hover {
+	color: grey;
+}
+
+/* This just adds some style to the placeholder text */
+
+#content {
+	width: 1200px;
+	padding-top: 100px;
+	padding-bottom: 30px;
+	margin-left: 30px;
+	margin-right: 50px;
+}
+
+table.form td {
+	width: 180px;
+}
+
+#er {
+    color: #F00;
+    text-align: left;
+    margin: 20px 15px 25px 0px;
+    font-size: 15px;
+}
+
+#er_out {
+    color: #F00;
+    text-align: left;
+    margin: 20px 15px 25px 0px;
+    font-size: 15px;
+}
+
+#er_lab {
+    color: #F00;
+    text-align: left;
+    margin: 20px 15px 25px 0px;
+    font-size: 15px;
+}
+
+#er_bl {
+    color: #444;
+    text-align: left;
+    margin: 15px 15px 25px 0px;
+    font-size: 15px;
+}
+
+#er_green {
+    color: green;
+    text-align: left;
+    margin: 15px 15px 25px 0px;
+    font-size: 15px;
+}
+
+.title {
+	border: 0px;
+	float:left; 
+	text-align: left;
+	top: 0px;
+	left: 0px;
+	border-bottom:1pt solid black;
+	font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 16px;
+	font-weight: bold;
+}
+
+.close {
+	border: 0px;
+	float:right; 
+	text-align: right;
+	top: 0px;
+	right: 0px;
+}
+
+a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
+}
+
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  ##width:325px;
+  z-index:50;
+  padding: 5px 5px 20px 20px;
+}
+
+label {
+  /*display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;*/
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
+
+td.highlight {
+        font-weight: bold;
+        color: red;
+}
+
+td.occupied {
+        background-color: #FF3333;
+        font-weight: bold;
+        font-size: 10px;
+        color: black;
+        border:1px solid #999999;
+}
+td.available {
+        background-color: #7BFF7B;
+        font-weight: bold;
+        font-size: 10px;
+        color: black;
+        border:1px solid #999999;
+}
+td.occupied_nc {
+        background: repeating-linear-gradient(
+          45deg,
+          #FF3333, /*darker #e60000 #ff0000 lighter #ff4d4d*/
+          #FF3333 5px,
+          #ff0000 5px,
+          #ff0000 10px
+        );
+        font-weight: bold;
+        font-size: 10px;
+        color: black;
+        border:1px solid #999999;
+}
+td.available_nc {
+        background: repeating-linear-gradient(
+          45deg,
+          #7BFF7B, /*darker #2fff2f #48ff48 lighter #95ff95*/
+          #7BFF7B 5px,
+          #2fff2f 5px,
+          #2fff2f 10px
+        );
+        font-weight: bold;
+        font-size: 10px;
+        color: black;
+        border:1px solid #999999;
+}
+td.clean {
+        background: repeating-linear-gradient(
+          45deg,
+          #FF3333, /*darker #e60000 #ff0000 lighter #ff4d4d*/
+          #FF3333 5px,
+          #ff0000 5px,
+          #ff0000 10px
+        );
+        font-weight: bold;
+        font-size: 10px;
+        color: black;
+        border:1px solid #999999;
+}
+
+
+.styled-select {
+   width:100px;
+   overflow: hidden;
+   background: #F8F8F8;
+   border: 1px solid #DDDDDD;
+   height: 30px;
+   border-radius:2px;
+ }
+ 
+.styled-select select {
+  width: 100%;
+  border: 0;
+  line-height: 1.5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  appearance: none;
+  background: transparent url("/img/smart_arrows.png") no-repeat scroll 97% 8px;
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background: transparent url("/img/smart_arrows@2x.png") no-repeat scroll 97% 8px;
+      background-size: 16px 144px;
+    }
+}
+
+
+.ui-dialog.patient_emr {
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 13px;
+}
+
+.ui-widget-content.patient_emr {
+    background: #F9F9F9;
+    border: 1px solid #222222;
+    color: #222222;
+}
+
+.ui-dialog.patient_emr {
+    left: 0;
+    outline: 0 none;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    
+}
+
+.ui-dialog.patient_emr .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.ui-dialog.patient_emr .ui-widget-header {
+    background: #c0d078;
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+.ui-dialog.patient_emr .ui-dialog-titlebar {display:none}
+
+.select_filter {
+   width:100px;
+   overflow: hidden;
+   background: #F8F8F8;
+   border: 1px solid #DDDDDD;
+   border-radius:2px;
+   font-family: 'trebuchet MS', 'Lucida sans', Arial;
+   font-size: 14px;
+   color: #444;
+}
+
+.text_filter {
+   width:100px;
+   overflow: hidden;
+   background: #F8F8F8;
+   border: 1px solid #DDDDDD;
+   border-radius:2px;
+   font-family: 'trebuchet MS', 'Lucida sans', Arial;
+   font-size: 14px;
+   color: #444;
+}
+input[type="submit"] {
+    font-family: 'trebuchet MS','Lucida sans','Arial';
+    font-size: 1em;
+    border-radius: 5px;
+    background: #f4f4f4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+    border: 1px solid #999999;
+    box-shadow: 1px 1px 3px #CCCCCC;
+    color: #000000 !important;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 3px;
+    padding: 5px 8px;
+    position: relative;
+}

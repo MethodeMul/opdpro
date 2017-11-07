@@ -1,0 +1,43 @@
+wamp-conf.xml
+- Admin info about version of the application and others
+
+index.php
+- Initial page of the application, allows user to login
+
+vw-home.php
+- Home page and navigation menu
+
+vw-logout.php
+- Redirects to login page so another user can login in the system
+
+vw-data_entry_OPD.php
+- Form to enter data for the OPD
+
+vw-table_central_registration.php
+- Table to display in the Reports page
+
+vw-admin.php
+- Backup and restore DB
+
+vw-contact.php
+- Contact details of people involved in the project
+
+ctl-db_connection.php
+- Contains the credentials to access the DB
+
+ctl-server_processing.php
+- Access the database to retrieve the data to display in the report table
+
+ctl-ssp.class.php
+- File needed for DataTables plugin
+
+ctl-write_values_form.php
+- When submitting the form by clicking on the button, it calls this file to insert or update records
+
+ctl-read_values_form.php
+- When loading form page, it calls this file to retrieve values from DB
+
+
+
+
+

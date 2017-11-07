@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<wamp_conf>
+	<version>1.0.0</version>
+	<date>2017-08-15</date>
+    <dba></dba>
+	<wampserver>2.52.5-64b</wampserver>
+    <apache>2.4.9-no_ssl</apache>
+    <php>5.5.12</php>
+    <mysql>5.6.17</mysql>
+	<mysql_path>c:/wamp/bin/mysql/bin/</mysql_path>
+</wamp_conf>
