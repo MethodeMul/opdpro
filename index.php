@@ -30,6 +30,7 @@ if(isset($_POST['myusername']) && isset($_POST['mypassword']))
 		$count=mysqli_num_rows($result);
 
 		// If result matched $myusername and $mypassword, table row must be 1 row
+		//git try
 		if($count==1){
 
 			// Register $myusername and redirect to file "login_success.php"
