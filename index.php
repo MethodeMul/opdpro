@@ -80,10 +80,10 @@ div.simpleContContent {
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
-<td colspan="2" style="padding-bottom:15px; padding-top:15px;"><strong>Welcome to ELEOS, the MSF Ebola tool for Emergency Operational Support</strong></td>
+<td colspan="2" style="padding-bottom:15px; padding-top:15px;"><strong>Welcome to NKOZI Hospital Information Management tool</strong></td>
 </tr>
 <tr>
-<td colspan="2" align="center" style="padding-bottom:15px"><img src="images/logo_msf.png"></td>
+<td colspan="2" align="center" style="padding-bottom:15px"><img src="images/doctortool2.jpg"></td>
 </tr>
 <tr>
 <td width="78">Username</td>
