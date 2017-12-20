@@ -1,5 +1,6 @@
 <?php
 session_start(); // Starting Session
+//session_start() : ..............
 
 if(isset($_POST['myusername']) && isset($_POST['mypassword']))
 {
@@ -19,8 +20,10 @@ if(isset($_POST['myusername']) && isset($_POST['mypassword']))
 		$tbl_name = "loginuser";
 
 		// To protect MySQL injection (more detail about MySQL injection)
-		$myusername = stripslashes($myusername);
-		$mypassword = sha1($mypassword);
+		//----
+		$myusername = stripslashes($myusername); //STRIPSLASHES ---
+		$mypassword = sha1($mypassword); 
+		//Explaination of how to use sha1 -- SELECT SHA1("hedo") then the encrypted output is replaced in the password field
 		//$myusername = mysqli_real_escape_string($myusername);
 		//$mypassword = mysqli_real_escape_string($mypassword);
 		$sql="SELECT * FROM $tbl_name WHERE username='".$myusername."' and password='".$mypassword."';";
@@ -75,34 +78,34 @@ div.simpleContContent {
 
 <div id="simpleContContent" class="simpleContContent" style="opacity: 1;">
 <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
-<tr>
-<form name="form1" method="post" action="#">
-<td>
-<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
-<tr>
-<td colspan="2" style="padding-bottom:15px; padding-top:15px;"><strong>Welcome to NKOZI Hospital Information Management tool</strong></td>
-</tr>
-<tr>
-<td colspan="2" align="center" style="padding-bottom:15px"><img src="images/doctortool2.jpg"></td>
-</tr>
-<tr>
-<td width="78">Username</td>
-<td width="294"><input name="myusername" type="text" id="myusername"></td>
-</tr>
-<tr>
-<td>Password</td>
-<td><input name="mypassword" type="password" id="mypassword"></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Login"></td>
-</tr>
-</table>
-</td>
-</form>
+    <tr>
+    <form name="form1" method="post" action="#">
+    <td>
+    <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+        <tr>
+        <td colspan="2" style="padding-bottom:15px; padding-top:15px;" align= "center">
+        	<strong>Welcome to NKOZI Medical Information for Operational Support Tool</strong></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center" style="padding-bottom:15px"><img src="images/doctortool2.jpg"></td>
+        </tr>
+        <tr>
+        <td width="78">Username</td>
+        <td width="294"><input name="myusername" type="text" id="myusername"></td>
+        </tr>
+        <tr>
+        <td>Password</td>
+        <td><input name="mypassword" type="password" id="mypassword"></td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><input type="submit" name="Submit" value="Login"></td>
+        </tr>
+	</table>
+	</td>
+	</form>
 </tr>
 </table>
 </div>
 <div id="er" color="444"><?php if(isset($er) && $er != '') echo $er; ?></div>
 	
-			

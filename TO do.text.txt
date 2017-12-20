@@ -1,0 +1,2 @@
+
+Attribute (cellpadding) is obsolete. Its use is discouraged in HTML5 documents.
