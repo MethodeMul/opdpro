@@ -51,7 +51,7 @@
 		
 		if(isset($_GET['opt'])) {
 			if($_GET['opt'] == 'data') {
-				include ('vw-data_entry_OPD.php');
+				include ('vw-data_entry.php');
 			}
 			elseif($_GET['opt'] == 'report') {
 				echo '<p>Overview of all patients</p>';
