@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>NKOCOS</title>
+<title>ELEOS</title>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
 <!--link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/-->
 <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.2.custom/jquery-ui.css"/>
@@ -29,7 +29,7 @@
 	?>
 
 	<div id="navigation">
-		<a href="vw-home.php"><img src="images/doctortool.ico"  border="0"></a>
+		<a href="vw-home.php"><img src="images/logo_msf_small.png" border="0"></a>
 		<a href="vw-home.php?opt=data">Data entry</a>
 		<a href="vw-home.php?opt=report">Reports</a>
 		<a href="vw-home.php?opt=admin">Administrative</a>
@@ -47,7 +47,6 @@
 	
 	<div id="content">
 		<?php
-		session_start(); 
 		
 		if(isset($_GET['opt'])) {
 			if($_GET['opt'] == 'data') {
@@ -64,7 +63,12 @@
 			elseif($_GET['opt'] == 'admin') {
 				include ('vw-admin.php');
 			}
-			
+			/*else {
+				echo '<p>Welcome to the MSF ETC Management tool</p>';
+				echo '<br>';
+				include ('vw-patient_emr.php');
+				include ('datatables-view.php');				
+			}*/
 		}
 		else {
 			echo '<p>Welcome to my web site</p>';

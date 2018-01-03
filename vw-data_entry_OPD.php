@@ -65,11 +65,6 @@ $(document).ready(function() {
     var table1 = $('#Diagnostics').dataTable({
 	    dom: 'rt', //'T<"clear">lrtip' //Don't display Search bar and show entries
         //"iDisplayLength": 25,
-		columns: [
-			{ "width": "40px" },
-			{ "width": "30px" },
-			{ "width": "30px" }
-		]
         //processing: true,
         //serverSide: true,
         /*ajax: {
@@ -82,10 +77,6 @@ $(document).ready(function() {
     var table2 = $('#TestMalaria').dataTable({
 	    dom: 'rt',
         //"iDisplayLength": 25,
-		columns: [
-			{ "width": "70px" },
-			{ "width": "30px" }
-		]
         //processing: true,
         //serverSide: true,
         /*ajax: {
@@ -196,36 +187,42 @@ $(document).ready(function() {
 			<tr>
 				<th>Diagnostic</th>
 				<th>Age <5y</th>
-				<th>Age >=5y</th>
+				<th>Age 5y-14y</th>
+				<th>Age >=15y</th>
 			</tr>
 		</thead>
 		<tfoot>
 			<tr>
 				<th>Diagnostic</th>
 				<th>Age <5y</th>
-				<th>Age >=5y</th>
+				<th>Age 5y-14y</th>
+				<th>Age >=15y</th>
 			</tr>
 		</tfoot>
 		<tbody>
 			<tr>  
 				<td>Malaria</td>
 				<td><input type="text" id="r_1_1" name="r_1_1" class="numericInput" value=""></td>
-				<td><input type="text" id="r_1_2" name="r_1_2" class="numericInput" value=""></td>
+				<td><input type="text" id="r_1_4" name="r_1_4" class="numericInput" value=""></td>
+				<td><input type="text" id="r_1_5" name="r_1_5" class="numericInput" value=""></td>
 			</tr>
 			<tr>
 				<td>Cholera</td>
 				<td><input type="text" id="r_2_1" name="r_2_1" class="numericInput" value=""></td>
-				<td><input type="text" id="r_2_2" name="r_2_2" class="numericInput" value=""></td>
+				<td><input type="text" id="r_2_4" name="r_2_4" class="numericInput" value=""></td>
+				<td><input type="text" id="r_2_5" name="r_2_5" class="numericInput" value=""></td>
 			</tr>
 			<tr>
 				<td>Measles</td>
 				<td><input type="text" id="r_3_1" name="r_3_1" class="numericInput" value=""></td>
-				<td><input type="text" id="r_3_2" name="r_3_2" class="numericInput" value=""></td>
+				<td><input type="text" id="r_3_4" name="r_3_4" class="numericInput" value=""></td>
+				<td><input type="text" id="r_3_5" name="r_3_5" class="numericInput" value=""></td>
 			</tr>
 			<tr>
 				<td>Trauma</td>
 				<td><input type="text" id="r_4_1" name="r_4_1" class="numericInput" value=""></td>
-				<td><input type="text" id="r_4_2" name="r_4_2" class="numericInput" value=""></td>
+				<td><input type="text" id="r_4_4" name="r_4_4" class="numericInput" value=""></td>
+				<td><input type="text" id="r_4_5" name="r_4_5" class="numericInput" value=""></td>
 			</tr>
 		</tbody>
 	</table>
